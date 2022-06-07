@@ -12,7 +12,7 @@ public class Chest : Collectable
         {
             collected = true;
             GetComponent<SpriteRenderer>().sprite = emtychest;
-            Debug.Log("Get " + Amount + " gold ");
+            GameManager.instance.ShowText("+" + Amount + "gold" , 25, Color.yellow, transform.position, Vector3.up * 50, 3.0f);
         }
 
     }
