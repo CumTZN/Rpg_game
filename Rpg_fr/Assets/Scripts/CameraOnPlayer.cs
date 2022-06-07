@@ -38,7 +38,9 @@ public class CameraOnPlayer : MonoBehaviour
                 delta.y = deltaY + boundY;
             }
 
-            transform.position += new Vector3(delta.x, delta.y, 0);
+
         }
+
+        transform.position += new Vector3(delta.x, delta.y, 0);
     }
 }
