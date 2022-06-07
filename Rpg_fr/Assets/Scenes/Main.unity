@@ -14694,7 +14694,7 @@ GameObject:
   - component: {fileID: 2090088161}
   - component: {fileID: 2090088160}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14712,6 +14712,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9e52d46a8f0b81418310bc33f84c7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playersSprites: []
+  weaponSprites: []
+  weaponPrisces: 
+  xpTable: 
+  player: {fileID: 0}
+  gold: 0
+  experience: 0
 --- !u!4 &2090088161
 Transform:
   m_ObjectHideFlags: 0
