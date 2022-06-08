@@ -33,6 +33,25 @@ public class Weapon : Collidable
         }
 
     }
+
+    protected override void OnCollide(Collider2D coll)
+    {
+        if (coll.tag == "Fighter")
+        {
+            if (coll.name == "Player")
+                return;
+
+            Damage dmg = new Damage()
+            {
+                damageAmount = damagePoint,
+                origin = transform.position,
+                pushForce = pushForce
+            };
+
+            coll.SendMessage("ReceiveDamage", dmg);
+            
+        }
+    }
     private void Swig()
     {
         Debug.Log("Swig");
